@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Image, Pressable, Text, View, Alert } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 
-export class home extends Component {
+export class Home extends Component {
   render() {
     return (
       <View className="flex-1 items-center justify-start py-8 -top-9">
-      <ScrollView className="-mx-20 pl-10">
+      <ScrollView className="-mx-10 pl-12">
         <View className="w-96 h-16 rounded-lg bg-emerald-400 top-2 -left-3">
           <View className="flex-row">
             <Image className="w-10 h-10 top-3 left-3 rounded-full " source={require("../assets/Hiking-icon.jpg")}></Image>
@@ -60,10 +60,11 @@ export class home extends Component {
           <Image className="w-24 h-20 -top-32  left-60 ml-1 rounded-xl" source={require("../assets/Hiking Forest.jpg")}></Image>
           <Image className="w-24 h-20 -top-28 left-60 ml-1 rounded-xl" source={require("../assets/Hiking Forest.jpg")}></Image>
         </View>
+        
       </ScrollView>
     </View>
     )
   }
 }
 
-export default home
+export default Home
